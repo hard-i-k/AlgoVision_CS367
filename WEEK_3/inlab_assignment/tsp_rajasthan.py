@@ -3,7 +3,6 @@ import random
 import numpy as np
 import matplotlib.pyplot as plt
 
-# --- 1. PROBLEM SETUP: CITIES AND COORDINATES ---
 
 # Dictionary of 20 tourist locations in Rajasthan and their (latitude, longitude)
 cities = {
@@ -35,7 +34,6 @@ coordinates = np.array([cities[name] for name in city_names])
 num_cities = len(cities)
 
 
-# --- 2. HELPER FUNCTIONS ---
 
 def calculate_total_distance(tour, coords):
     """Calculates the total Euclidean distance of a tour."""
@@ -50,7 +48,6 @@ def calculate_total_distance(tour, coords):
         total_dist += dist
     return total_dist
 
-# --- 3. SIMULATED ANNEALING ALGORITHM ---
 
 def simulated_annealing(coords, initial_temp, cooling_rate, iterations):
     """
@@ -110,7 +107,6 @@ def simulated_annealing(coords, initial_temp, cooling_rate, iterations):
             
     return best_tour, best_cost, cost_history
 
-# --- 4. VISUALIZATION FUNCTIONS ---
 
 def plot_tour(tour, coords, names):
     """Plots the final tour map."""
@@ -143,7 +139,6 @@ def plot_cost_convergence(history):
     plt.grid(True)
     plt.show()
 
-# --- 5. MAIN EXECUTION ---
 
 if __name__ == "__main__":
     # SA Hyperparameters
