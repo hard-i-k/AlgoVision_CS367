@@ -3,7 +3,7 @@ import random
 
 # Data structure for storing variable assignments in search
 class SearchState:
-    def _init_(self, assignment):
+    def __init__(self, assignment):
         self.assignment = assignment
 
 # Evaluation function: Calculate number of satisfied clauses

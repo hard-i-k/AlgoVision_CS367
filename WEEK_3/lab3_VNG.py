@@ -5,7 +5,7 @@ import random
 # Configuration holder for boolean variables
 # ==================================
 class BooleanConfiguration:
-    def _init_(self, boolean_values):
+    def __init__(self, boolean_values):
         self.boolean_values = boolean_values  # Array of True/False values converted to 1/0
 
 

@@ -2,14 +2,14 @@ import heapq
 
 class BoardNode:
     """Represents a single node in the search tree."""
-    def _init_(self, board, parent=None, cost=0, heuristic=0):
+    def __init__(self, board, parent=None, cost=0, heuristic=0):
         self.board = board
         self.parent = parent
         self.g = cost             # actual path cost
         self.h = heuristic        # estimated cost to goal
         self.f = self.g + self.h  # total cost (A* priority)
 
-    def _lt_(self, other):
+    def __lt__(self, other):
         return self.f < other.f
 
 

@@ -3,7 +3,7 @@ import random
 
 # Container class for variable truth value assignments
 class VariableAssignment:
-    def _init_(self, values):
+    def __init__(self, values):
         self.values = values
 
 # Scoring function A: tallies satisfied clauses in formula
