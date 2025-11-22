@@ -1,0 +1,1 @@
+Quantum computing represents a revolutionary approach to information processing. Quantum bits or qubits can exist in superposition states. Quantum algorithms solve certain problems exponentially faster. Quantum error correction is a major research challenge. Practical quantum computers remain several years away.
