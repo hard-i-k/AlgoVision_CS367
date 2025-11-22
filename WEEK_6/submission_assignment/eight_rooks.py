@@ -15,7 +15,7 @@ class HopfieldRooks:
 
     def build_W(self):
         # negative interaction prevents two rooks in same row/column
-        penalty = -1.9   # changed from -2 to -1.9
+        penalty = -1.9   
 
         for r in range(self.n):
             for c in range(self.n):
