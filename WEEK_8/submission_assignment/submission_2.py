@@ -2,7 +2,7 @@
 import numpy as np
 from scipy.stats import poisson
 
-# Core constants (minimal renames from original)
+# Core constants 
 MAX_BIKES = 20
 MAX_MOVE = 5  # action bounds
 RENTAL_REWARD = 10
@@ -10,7 +10,7 @@ MOVE_COST = 2  # cost per bike moved
 OVERFLOW_FEE = 4  # parking cost when >10 bikes
 DISCOUNT = 0.9
 
-# Demand and return rates (unchanged values)
+# Demand and return rates
 RENTAL_REQUEST_RATE = [3, 4]
 RETURN_RATE = [3, 2]
 
@@ -84,5 +84,5 @@ def policy_iteration():
 
 if __name__ == "__main__":
     pol, val = policy_iteration()
-    print("Policy (with SciPy restored):")
+    print("Policy")
     print(pol)
