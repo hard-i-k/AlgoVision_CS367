@@ -1,6 +1,5 @@
 import numpy as np
 
-# Constants (same semantics, new naming/style)
 RENTAL_PAYOFF = 10
 SHIFT_COST = 2
 LOT_SURCHARGE = 4
